@@ -1,0 +1,129 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-property{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section{
+    margin: 2rem 0;
+}
+
+h3{
+    text-align: center;
+}
+.container{
+    width: fit-content;
+    height: fit-content;
+    justify-content: space-between;
+}
+.polygon-left, .polygon-right{
+    background-color: rgb(68, 13, 208);
+    height: 5rem;
+    width: 7rem;
+}   
+.polygon-left{
+    clip-path: polygon(100% 0%, 55% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+.polygon-right{
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0 100%, 55% 50%, 0 0);
+}
+.company{
+    justify-content: space-between;
+    height: 8rem;
+}
+.heading{
+    background-color: rgb(68, 13, 208);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.main-heading{
+    padding: 0.5rem 4rem;
+}
+.description p{
+    text-align: center;
+    padding: 0 18rem;
+    font-weight: 600;
+}
+hr{
+    width: 40%;
+    border: 2px dashed rgb(68, 13, 208);
+    margin: 0.5rem 0 2rem 0 ;
+}
+.employee{
+    flex-direction: row;
+}
+.employee-details{
+    width: 10rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+.employee-details img{
+    height: 10rem;
+    width: 12rem;
+}
+.secondary-heading{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.employee-details p{
+    color: rgb(68, 13, 208);
+}
+
+
+/* Responiveness */
+
+@media only screen and (min-width: 360px) and (max-width: 1000px){
+    .container{
+        width: 100vw;
+    }
+    .polygon-left, .polygon-right{
+        height: 3rem;
+        width: 5rem;
+    }
+    section{
+        width: 100%;
+    }
+    .main-heading{
+        padding: 0.3rem 2rem;
+    }
+    .description p{
+        padding: 1rem 2rem;
+        font-weight: 300;
+    }
+    hr{
+        width: 70%;
+    }
+    .employee-details img{
+        width: 7rem;
+        height: 6rem;
+        border-radius: 50%;
+    }
+    .employee-details{
+        margin: 0 0 2rem 0;
+    }
+    .team{
+        flex-wrap: wrap;
+    }
+    .middle{
+        display: none;
+    }
+    .heading{
+        align-self: center;
+    }
+    .small-screen{
+        width: fit-content;
+    }
+}
